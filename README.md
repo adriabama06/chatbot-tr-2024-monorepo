@@ -3,7 +3,7 @@ Research work (Treball de recerca)
 
 ## Monorepo for Batxillerat Research Project Code
 
-This repository contains the code developed for my **Treball de Recerca** (Research Project) during the **2024-2025 academic year**. The project focuses on creating a chatbot, and this monorepo houses its various components.
+This repository contains the code developed for my **Treball de Recerca** (Research Project) during the **2023-2024 academic year**. The project focuses on creating a chatbot, and this monorepo houses its various components.
 
 ---
 
