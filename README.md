@@ -1,5 +1,6 @@
 # chatbot-tr-2024-monorepo
 Research work (Treball de recerca)
+* *NOTE: Some PDFs have been slightly distorted due to censorship, but I obviously still keep the original files in the private repository and on my hard drive.*
 
 ## Monorepo for Batxillerat Research Project Code
 
