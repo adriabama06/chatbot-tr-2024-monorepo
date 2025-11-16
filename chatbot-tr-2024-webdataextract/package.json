@@ -1,0 +1,21 @@
+{
+  "name": "chatbot-tr-2024-webdataextract",
+  "version": "1.1.0",
+  "description": "Extract the data to use in the RAG",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "3.1.3"
+  },
+  "dependencies": {
+    "openai": "4.68.1",
+    "turndown": "7.2.0"
+  }
+}

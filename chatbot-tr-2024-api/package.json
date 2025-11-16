@@ -1,0 +1,20 @@
+{
+  "name": "chatbot-tr-2024-api",
+  "version": "1.1.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "adriabama06",
+  "homepage": "https://github.com/adriabama06/chatbot-tr-2024-api",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.19.2",
+    "ollama": "0.5.2",
+    "openai": "4.52.7"
+  }
+}

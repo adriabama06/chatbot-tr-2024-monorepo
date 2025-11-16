@@ -1,0 +1,2 @@
+Deleted due to the high amount of information about my High School.
+There shoud be the test of multiple LLM models to know which one is the best. + A part of research testing via questionnaire to filter which one is the most liked by the users.

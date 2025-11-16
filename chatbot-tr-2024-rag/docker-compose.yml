@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  chatbot-rag-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: chatbot-rag-server
+    restart: unless-stopped
+    networks:
+      - chatbot-rag-server
+    volumes:
+      - ./data.json:/app/data.json
+    env_file:
+      - .env
+    ports:
+      - 8024:80
+    depends_on:
+      - pgvector
+
+  pgvector:
+    image: pgvector/pgvector:pg16
+    container_name: chatbot-rag-server-pgvector
+    restart: unless-stopped
+    networks:
+      - chatbot-rag-server
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=vectordb
+      - POSTGRES_USER=chatbot
+      - POSTGRES_PASSWORD=trrag
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    volumes:
+     - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+     - ./postgresql:/var/lib/postgresql/data
+
+networks:
+  chatbot-rag-server:

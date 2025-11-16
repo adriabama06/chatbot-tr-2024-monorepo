@@ -1,0 +1,14 @@
+services:
+  chatbot-app-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: chatbot-app-server
+    restart: unless-stopped
+    networks:
+      - chatbot-app-server
+    ports:
+      - 8080:4173
+
+networks:
+  chatbot-app-server:

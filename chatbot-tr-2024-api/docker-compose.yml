@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  chatbot-api-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: chatbot-api-server
+    restart: unless-stopped
+    network_mode: bridge
+#    networks:
+#      - chatbot-api-server
+    env_file:
+      - .env
+    ports:
+      - 8025:80
